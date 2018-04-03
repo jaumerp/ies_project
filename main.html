@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Windows</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Import main.css-->
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body class="teal lighten-5">
+
+<!-- ********************** -->
+<!-- ** NAVBAR goes here ** -->
+<!-- ********************** -->
+<nav class="teal lighten-1">
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>IES Demo</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#"><i class="material-icons">chat</i></a></li>
+            <li><a href="#"><i class="material-icons">mail</i></a></li>
+            <li><a href="#"><i class="material-icons">notifications</i></a></li>
+            <li><a href="#"><i class="material-icons dropdown-trigger" data-target="person">person</i></a></li>
+            <!-- <li><a href="#"><img src="img/user1.png" alt="" class="circle responsive-img"></a></li>-->
+            <li><a href="#" ><i class="material-icons sidenav-trigger" data-target="slide-out">view_headline</i></a></li>
+        </ul>
+
+        <!-- Dropdown Structure USER -->
+        <ul id='person' class='dropdown-content'>
+            <li><a href="#"><i class="material-icons">face</i>Profile</a></li>
+            <li><a href="#"><i class="material-icons">settings</i>Settings</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#"><i class="material-icons">power_settings_new</i>Logout</a></li>
+        </ul>
+        <!-- Dropdown Structure SIDENAV -->
+        <ul id="slide-out" class="sidenav teal lighten-5">
+            <li><div class="user-view sidenav-bg">
+                <!-- <div class="background">
+                    <img src="img/office.jpg">
+                </div>-->
+                <a href="#user"><img class="circle" src="img/user1.png"></a>
+                <a href="#name"><span class="white-text name">Jaume Rossiñol</span></a>
+                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+            </li>
+            <!-- submenu1 ----------------->
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header"><i class="material-icons">mouse</i>A un clic<i class="material-icons right">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!">Missatgeria interna</a></li>
+                                <li><a href="#!">Diari de classe</a></li>
+                                <li><a href="#!">Actes</a></li>
+                                <li><a href="#!">Reserves</a></li>
+                                <li><a href="#!">Horaris</a></li>
+                                <li><a href="#!">WebCalendari</a></li>
+                                <li><a href="#!">Accés al Servidor d'arxius</a></li>
+                                <li><a href="#!">Accés al Servidors del Centre</a></li>
+                                <li><a href="#!">Les meves dades</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <!-- submenu2 ----------------->
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header"><i class="material-icons">library_books</i>Documents<i class="material-icons right">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!">Accés a models i documents</a></li>
+                                <li><a href="#!">Oferta educativa</a></li>
+                                <li><a href="#!">Calendari del curs</a></li>
+                                <li><a href="#!">Pla d'avaluació</a></li>
+                                <li><a href="#!">Documents planificació</a></li>
+                                <li><a href="#!">Documentació externa</a></li>
+                                <li><a href="#!">Competències Bàsiques</a></li>
+                                <li><a href="#!">Nous titols FP</a></li>
+                                <li><a href="#!">Galeria d'imatges</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <!-- submenu3 ----------------->
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header"><i class="material-icons">school</i>Avaluació i Tutoria<i class="material-icons right">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!">Indicadors generals</a></li>
+                                <li><a href="#!">Indicadors Activitat Aula</a></li>
+                                <li><a href="#!">Entrada d'enquestes</a></li>
+                                <li><a href="#!">Obrir i tancar enquestes alumnes</a></li>
+                                <li><a href="#!">Interavaluacions</a></li>
+                                <li><a href="#!">Competències bàsiques</a></li>
+                                <li><a href="#!">Tutoria</a></li>
+                                <li><a href="#!">Mobilitat</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <!-- submenu4 ----------------->
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header"><i class="material-icons">people</i>Qui és qui?<i class="material-icons right">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!">Òrgans de govern</a></li>
+                                <li><a href="#!">Departaments didàctics</a></li>
+                                <li><a href="#!">Families professionals</a></li>
+                                <li><a href="#!">Coordinacions i projectes</a></li>
+                                <li><a href="#!">Personal no docent</a></li>
+                                <li><a href="#!">Tutories</a></li>
+                                <li><a href="#!">APIMA</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <!-- submenu4 ----------------->
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header"><i class="material-icons">help</i>Qué necessites<i class="material-icons right">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!">Consulta i Gestió inventari</a></li>
+                                <li><a href="#!">Gestionar llibres de text</a></li>
+                                <li><a href="#!">Consulta i Gestió biblioteca</a></li>
+                                <li><a href="#!">Formació professorat</a></li>
+                                <li><a href="#!">Energia solar</a></li>
+                                <li><a href="#!">Moodle 16-17 (sols consulta)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <!-- submenu6 ----------------->
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header"><i class="material-icons">link</i>Enllaços<i class="material-icons right">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!">Educatius</a></li>
+                                <li><a href="#!">Lingüístics</a></li>
+                                <li><a href="#!">WEB de l'IES</a></li>
+                                <li><a href="#!">Xestib</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <div class="divider"></div>
+            <li><a href="#!"><i class="material-icons">power_settings_new</i>Logout</a></li>
+        </ul>
+        </ul>
+    </div>
+</nav>
+
+<!-- ********************** -->
+<!-- ** MAIN Layout here ** -->
+<!-- ********************** -->
+<main>
+    <div class="row">
+        <!-- espai entre el nav i el main -->
+        <div class="col s12 m6 l12"></div>
+        <!-- //////////////// SECTION 1 //////////////// -->
+        <div class="section row">
+            <!-- CARD 1 -->
+            <div class="col s12 m6 l4">
+                <!--<h5 class="header center-align">Missatgeria interna</h5>-->
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <i class="material-icons medium">chat</i></a>
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p>Enviau missatges al professorat del centre emprant la intranet de l'IES.</p>
+                        </div>
+                        <div class="card-action center-align">
+                            <a href="#"><span class="teal-text text-darken-4">Missatgeria interna</span><span class="new badge">4</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col s12 m6 l4">
+                <!--<h5 class="header center-align">Correu Electrònic</h5>-->
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <i class="material-icons medium">mail</i></a>
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p>Consultau el correu electrònic. També podreu configurar-lo.</p>
+                        </div>
+                        <div class="card-action center-align">
+                            <a href="#"><span class="teal-text text-darken-4">Correu Electrònic</span><span class="new badge red">22</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col s12 m6 l4">
+                <!--<h5 class="header center-align">Calentet, calentet!</h5>-->
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <i class="material-icons medium">whatshot</i></a>
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p>Les darreres notícies més rellevants del centre.</p>
+                        </div>
+                        <div class="card-action center-align">
+                            <a href="#"><span class="teal-text text-darken-4">Calentet, calentet!</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //////////////// SECTION 2 //////////////// -->
+        <div class="section row">
+            <!-- CARD 1 -->
+            <div class="col s12 m6 l4">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="img/background-snow-small.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Perfil d'usuari<i class="material-icons right small">expand_less</i></span>
+                    <div class="chip">
+                        <img src="img/user1.png" alt="Contact Person">
+                        Jaume Rossiñol
+                    </div>
+                    <p><a href="#"><span class="teal-text text-darken-4 right">Modifica</span></a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Jaume Rossiñol<i class="material-icons right">close</i></span>
+                    <p><i class="material-icons">perm_identity</i> Project Manager</p>
+                    <p><i class="material-icons">perm_phone_msg</i> 612 222 898</p>
+                    <p><i class="material-icons">email</i> mail@ies.cat</p>
+                    <p><i class="material-icons">cake</i> 18th June 1990</p>
+                </div>
+            </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col s12 m6 l8">
+                <div class="card-panel">
+                    <div class="row center">
+                        <div class="col s1 m1 l1 valign-wrapper "> <i class="material-icons medium">apps</i></div>
+                        <div class="col s11 m11 l11 left"><h5>Accessos freqüents</h5></div>
+                    </div>
+                    <div class="row center">
+                        <div class="col s12 m6 l4 teal lighten-4 "><i class="material-icons medium">event_note</i><p>Diari de classe</p></div>
+                        <div class="col s12 m6 l4 teal lighten-3 "><i class="material-icons medium">confirmation_number</i><p>Reserves</p></div>
+                        <div class="col s12 m6 l4 teal lighten-4 "><i class="material-icons medium">access_time</i><p>Horari</p></div>
+                        <div class="col s12 m6 l4 teal lighten-3 "><i class="material-icons medium">today</i><p>Calendari</p></div>
+                        <div class="col s12 m6 l4 teal lighten-4 "><i class="material-icons medium">class</i><p>Moodle</p></div>
+                        <div class="col s12 m6 l4 teal lighten-3 "><i class="material-icons medium">spellcheck</i><p>Recursos lingüístics</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //////////////// SECTION 3 //////////////// -->
+        <div class="section row">
+
+        <div class="col s12 m12 l12 ">
+
+            <div class="card small">
+                <div class="row">
+                    <div class="col s1 m1 l1 valign-wrapper "> <i class="material-icons medium">notifications_none</i></div>
+                    <div class="col s11 m11 l11 valign-wrapper left"><h5>Pròxims events </h5></div>
+                </div>
+                <div class="divider"></div>
+                <div >
+                    <table class="striped teal lighten-4">
+                        <thead class="teal lighten-1">
+                        <tr class="white-text">
+                            <th>De</th>
+                            <th>Assumpte</th>
+                            <th>Data</th>
+                            <th>Hora</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>Direcció</td>
+                            <td>Claustre</td>
+                            <td>12/04/2018</td>
+                            <td>14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Departament Informàtica</td>
+                            <td>Reunió de departament</td>
+                            <td>12/04/2018</td>
+                            <td>15:00</td>
+                        </tr>
+                        <tr>
+                            <td>Departament Informàtica</td>
+                            <td>Reunió de FCT</td>
+                            <td>13/04/2018</td>
+                            <td>17:20</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</main>
+
+<!-- ************************ -->
+<!-- ** FOOTER Layout here ** -->
+<!-- ************************ -->
+<footer class="page-footer footer-fixed teal lighten-1">
+
+</footer>
+
+<!-- **************************************************** -->
+<!-- **JavaScript at end of body for optimized loading ** -->
+<!-- **************************************************** -->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript">
+    M.AutoInit();
+</script>
+
+</body>
+</html>

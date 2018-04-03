@@ -1,0 +1,64 @@
+/*
+#b2dfdb
+
+ */
+
+body {
+   /*background: #b2dfdb*/
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+nav{
+
+}
+
+nav .brand-logo i {
+    padding-left:20px;
+}
+
+nav img{
+    vertical-align: middle;
+    width: 50px;
+}
+
+main {
+    margin: 20px;
+    flex: 1 0 auto;
+}
+
+body#login::after {
+    content: "";
+    background: url("../img/backgroud-school.png");
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.centrat{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+.loginbox{
+    /*background-color: #009688;*/
+    width: 35%;
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.sidenav-bg{
+    background: url("../img/books.jpg");
+}
